@@ -16,7 +16,7 @@ if sabor.lower() == "chocolate" or sabor.lower() == "vainilla":
     adicion = str(input(" deseas incluir el topic adicional Si o No\n"))
 
     # se valida y se transforma a minusculas y en caso de que el cliente quiere adiciones
-    if adicion.lower() == "si" or adicion == True:
+    if adicion.lower() == "si" :
 
         # se cacula el sabor de helado = chocolate con adiciones
         if sabor.lower() == "chocolate":
@@ -24,17 +24,19 @@ if sabor.lower() == "chocolate" or sabor.lower() == "vainilla":
             print( f" el valor es: {valor_helado}")
 
         # se cacula el sabor de helado = vainilla con adiciones
-        elif sabor.lower() == "vainilla":
+        
+        else : # sabor.lower() == "vainilla"  iba aqui
+            
             valor_helado = vainilla + topping
             print( f" el valor es: {valor_helado}")     
                   
     # se calcula en caso de que no desee adiciones con chocolate
-    elif adicion.lower() == "no" or adicion == False:
+    elif adicion.lower() == "no" :
         valor_helado = chocolate
         print(f"El helado va sin adicionales para un total de {valor_helado}")
 
     # se calcula en caso de que no desee adiciones con chocolate
-    elif adicion.lower() == "no" or adicion == False:
+    elif adicion.lower() == "no":
         valor_helado = vainilla
         print(f"El helado va sin adicionales para un total de {valor_helado}")
 

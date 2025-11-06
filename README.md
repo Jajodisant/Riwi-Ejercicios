@@ -1,2 +1,0 @@
-# riwi
-python
