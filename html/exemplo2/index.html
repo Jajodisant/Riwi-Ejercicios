@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Globo con Imagen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Imagen con Globo Emergente</h2>
+
+<!-- Imagen principal con mapa -->
+<div class="contenedor-imagen">
+    <img src="pc.jpg" usemap="#mapaPC" id="imagenPC" alt="Foto de escritorio">
+
+    <!-- Globo flotante -->
+    <div id="globo" class="globo">
+        <span class="cerrar" onclick="cerrarGlobo(event)">×</span>
+        <img src="cafe.jpg" alt="Café" class="globo-img">
+        <span class="globo-texto">Taza de café</span>
+        <p class="globo-descripcion">
+            Una taza de café recién hecho para mantenerte energizado mientras trabajas.  
+        </p>   
+
+    </div>
+     <div id="globo" class="globo">
+        <span class="cerrar" onclick="cerrarGlobo(event)">×</span>
+        <img src="cel.jpg" alt="Café" class="globo-img">
+        <span class="globo-texto">Taza de café</span>
+        <p class="globo-descripcion">
+            Una taza de café recién hecho para mantenerte energizado mientras trabajas.  
+        </p>   
+
+    </div>
+ 
+</div>
+
+<map name="mapaPC">
+    <!-- Coordenadas de la taza -->
+     <area coords="310,300,55" href="javascript:void(0);" 
+          onclick="mostrarGlobo(event, 'cafe.jpg', 'Taza de café')" alt="cafe">
+
+     <area coords="150,200,40" href="javascript:void(0);" 
+          onclick="mostrarGlobo(event, 'cel.jpg', 'Celular')" alt="cel">
+</map>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Imagen con Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Mapa de Imagen Interactivo</h2>
+
+<!-- Imagen principal con mapa -->
+<img src="pc.jpg" usemap="#mapaPC" id="imagenPC" alt="Foto de escritorio">
+
+<map name="mapaPC">
+    <!-- Coordenadas aproximadas para la taza de café -->
+    <area 
+        shape="circle" 
+        coords="310,300,55" 
+        href="#" 
+        alt="Taza de café"
+        onclick="abrirModal('modalCafe')"
+    >
+</map>
+
+<!-- Modal del Café -->
+<div id="modalCafe" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modalCafe')">&times;</span>
+        <h2>Taza de Café</h2>
+        <img src="cafe.jpg" alt="Imagen de café" class="modal-img">
+        <p>Una taza de café para acompañar el trabajo.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+    

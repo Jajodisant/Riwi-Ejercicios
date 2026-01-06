@@ -1,0 +1,59 @@
+/* .contenedor-imagen {
+    position: relative;
+    display: inline-block;
+}
+ */
+/* #imagenPC {
+    max-width: 100%;
+    height: auto;
+} */
+
+/* Globo */
+.globo {
+    position: absolute;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 15px 10px 10px 10px; /* Top padding extra para la X */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: aparecer 0.25s ease;
+    z-index: 999;
+    width: 180px;
+    box-sizing: border-box;
+}
+
+/* Botón X */
+.cerrar {
+    position: absolute;
+    top: 5px;       /* separa del borde superior */
+    right: 5px;     /* separa del borde derecho */
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    background: transparent;
+    padding: 2px 5px;  /* espacio alrededor de la X */
+    border-radius: 3px;
+    z-index: 10;
+}
+
+/* Imagen dentro del globo */
+.globo-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px; /* deja espacio debajo de la X */
+}
+
+/* Texto dentro del globo */
+.globo-texto {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* Animación */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
