@@ -23,9 +23,9 @@ validarEdad(edad);
 
 //&& estado != false || estado != 0 || estado != null || estado != undefined || estado != NaN
 if (nombre != "" && estado == true) {       
-    console.log("Usuario activo con nombre registrado.");    
+    console.log("%c Usuario activo con nombre registrado.", "color: white ; background-color: green ; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");    
 }else{
-     console.log("Usuario con estado inactivo o sin nombre registrado.");
+     console.log("%c Usuario con estado inactivo o sin nombre registrado.", "color: white ; background-color: red ; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");
 }
 
 console.groupEnd();
@@ -71,11 +71,11 @@ console.groupEnd();
 function validarEdad(edad) {
 
     if (edad < 0 || isNaN(edad)) {
-        console.error("Edad inválida. Por favor, ingresa una edad válida.");
+        console.error("Edad inválida. Por favor, ingresa una edad válida.", "color: white ; background-color: red ; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");
     } else if (edad >= 18) {
-        console.log("Es mayor de edad.");
+        console.log("%c Es mayor de edad.", "color: white ; background-color: greenlight; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");
     } else {
-        console.warn("Es menor de edad.");
+        console.warn("Es menor de edad." , "color: white ; background-color: orangelight ; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");
     }
 }
 
@@ -85,18 +85,18 @@ function validarContraseña(contraseña , intento) {
    
         if (contraseña === contraseñaGuardada) {
             // %c para dar estilo al mensaje en la consola
-            console.log("%c Contraseña Correcta. Acceso concedido", "color: white ; background-color: green; font-size: 15px ; font: small-caps 100%/200% serif;");
+            console.log("%c Contraseña Correcta. Acceso concedido", "color: white ; background-color: green; font-size: 15px ; font: small-caps 100%/200% serif;padding: 3px;");
             
             break;
         }else {
-            console.log("%c Contraseña incorrecta. Intenta de nuevo.", "color: white ; background-color: red ; font-size: 15px ; font: small-caps 100%/200% serif;");
+            console.log("%c Contraseña incorrecta. Intenta de nuevo.", "color: white ; background-color: red ; font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");
             
             contraseñaIngresada = prompt("Por favor, ingresa una contraseña (mínimo 8 caracteres):");
             contraseña = contraseñaIngresada; // actualiza la contraseña ingresa nuevamente para entrar en el siguiente ciclo
         }
         intento++;
         if (intento == 2) {
-            console.log("%c Has agotado todos los intentos. Acceso denegado.", "color: white ; background-color: red;font-size: 15px ; font: small-caps 100%/200% serif;");  
+            console.log("%c Has agotado todos los intentos. Acceso denegado.", "color: white ; background-color: red;font-size: 15px ; font: small-caps 100%/200% serif; padding: 3px;");  
             break;         
         }
     }      
