@@ -1,0 +1,14 @@
+
+div{
+    text-align: center;
+    margin-top: 50px;
+    box-sizing: border-box 10px;
+}
+
+.boxText{
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
