@@ -1,5 +1,5 @@
 //ejemplo simple
-/* 
+
 sessionStorage.setItem("Nombre", "Sara"),
 console.log(sessionStorage.getItem("Nombre"))
 
@@ -27,5 +27,4 @@ console.log(recuperar)
 
 
 
- */
-3
+

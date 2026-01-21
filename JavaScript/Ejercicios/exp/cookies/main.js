@@ -22,7 +22,6 @@ function getCookie(nombre) {
 
 const select = document.getElementById("idioma");
 const texto = document.getElementById("texto");
-const body = document.ge
 
 // Diccionario de idiomas
 const idiomas = {
